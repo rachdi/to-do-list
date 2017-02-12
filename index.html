@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>projet</title>
+	<meta charset="UTF-8">
+	<title>Todo List</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="semantic/semantic.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	 
-		<h2>Simple To Do List</h2>
-    <ul id="todolist">
-    	<li class="a">hello<button class="btn">clean</button></li>
-    	<li class="b">how are you ?<button class="clean">clean</button></li>
 
-    </ul>
-    <input type="text" id="new-text" /><button id="rajouter">Rajouter</button>
-      
-    
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="" src="app.js"></script>
+	<div class="ui centered grid">
+
+		<div class="ui ten wide centered column">
+			<div class="ui teal center aligned segment">
+				<!-- <div class="row">
+					<h1 class="ui centered header">Ma super liste</h1>
+				</div> -->
+				<div class="row">
+					<form onsubmit="return false">
+						<input id="fieldInput" type="text" name="todo">
+						<button id="add" class="ui teal button">Ajouter</button>
+					</form>
+				</div>
+				<div class="row">
+					<button class="ui teal basic button" id="allTasks">Toutes mes tâches</button>
+					<button class="ui teal basic button" id="tasksToDo">Tâches à faire</button>
+					<button class="ui teal basic button" id="tasksDone">Tâches terminées</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four wide column">
+				<div class="ui vertical fluid tabular menu">
+					<div id="menuList">
+						<a id="List1" class="item active">Courses<i class="write icon"></i><i class="empty star icon"></i></a>
+						<a id="List2" class="item ">Idées de voyage<i class="trash outline icon"></i><i class="write icon"></i><i class="empty star icon"></i></a>
+					</div>
+					<div>
+						<form onsubmit="return false" class="ui center input">
+							<input type="text" name="addList" id="fieldList"><button id="addList" class="small ui teal button">Créer liste</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="ten wide stretched column">
+				<div class="row">
+					<div id="tasks" class="eight wide centered column">
+						<ul class="tasks middle aligned">			
+						</ul>
+					</div>
+				</div>
+				<div class="ui center aligned five wide column">
+					<button id="clear" class="ui red button">Vider la liste</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="app.js"></script>
 </body>
-
 </html>

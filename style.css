@@ -1,46 +1,54 @@
-body {
-font: normal normal 13px/16px "Open Sans", sans-serif;
-background: #ccc;
+html > body {
+	background-color: #FFFFF3;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.container{
-padding: 20px;
-width: 300px;
-margin: 0 auto;
-margin-top: 40px;
-background: white;
-border-radius: 5px;}
-
-form {
-display: inline-block;
+div {
+	margin: 30px;
 }
 
-input{
-padding: 4px 15px 4px 5px;
+#add {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	margin: 5px 15px;
 }
 
-#button{
-display: inline-block;
-background-color:#fc999b;
-color:#ffffff;
-border-radius: 5px;
-text-align:center;
-margin-top:2px;
-padding: 5px 15px;
+.ui.centered.header {
+	color: #011638;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5em;
+}
+.tasks li .ui.checkbox {
+	margin: 10px;
+	font-size: 1.3em;
+	line-height: 1.2em;
 }
 
-#button:hover{
-cursor: pointer;
-opacity: .8;}
+div > ul.tasks > li {
+	list-style: none;
+}
 
-ol {padding-left: 20px;}
+#tasks .checked {
+	color: grey;
+	text-decoration: line-through;
+	font-style: italic;
+}
 
-ol li {padding: 5px;color:#000;}
+#textInput {
+	font-size: 22px;
+}
 
-ol li:nth-child(even){background: #dfdfdf;}
+#fieldInput {
+	height: 40px;
+	width: 500px;
+}
 
-.strike{text-decoration: line-through;}
+.ui.thirteen.wide.centered.grid {
+	margin-top: 40px;
+}
 
-li:hover{
-  cursor: pointer;
- }
+#tasks {
+	margin-top: 10px;
+	text-align: left;
+
+}
