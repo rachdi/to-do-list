@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 	<div class="ui centered grid">
 
 		<div class="ui ten wide centered column">
@@ -18,12 +19,13 @@
 				</div> -->
 				<div class="row">
 					<form onsubmit="return false">
+						<h1>To Do List</h1>
 						<input id="fieldInput" type="text" name="todo">
 						<button id="add" class="ui teal button">Ajouter</button>
 					</form>
 				</div>
 				<div class="row">
-					<button class="ui teal basic button" id="allTasks">Toutes mes tâches</button>
+					<button class="ui teal basic button" id="allTasks">Mes tâches</button>
 					<button class="ui teal basic button" id="tasksToDo">Tâches à faire</button>
 					<button class="ui teal basic button" id="tasksDone">Tâches terminées</button>
 				</div>
@@ -33,12 +35,12 @@
 			<div class="four wide column">
 				<div class="ui vertical fluid tabular menu">
 					<div id="menuList">
-						<a id="List1" class="item active">Courses<i class="write icon"></i><i class="empty star icon"></i></a>
-						<a id="List2" class="item ">Idées de voyage<i class="trash outline icon"></i><i class="write icon"></i><i class="empty star icon"></i></a>
+						<a id="List1" class="item active">Exercice a faire <i class="write icon"></i><i class="empty star icon"></i></a>
+						<a id="List2" class="item ">rendez-vous a venir <i class="trash outline icon"></i><i class="write icon"></i><i class="empty star icon"></i></a>
 					</div>
 					<div>
 						<form onsubmit="return false" class="ui center input">
-							<input type="text" name="addList" id="fieldList"><button id="addList" class="small ui teal button">Créer liste</button>
+							<input type="text" name="addList" id="fieldList"><button id="addList" class="small ui teal button">Créer une liste</button>
 						</form>
 					</div>
 				</div>
