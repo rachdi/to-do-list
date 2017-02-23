@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 	<div class="ui centered grid">
 
 		<div class="ui ten wide centered column">
@@ -26,6 +27,7 @@
 					<button class="ui blue basic button" id="allTasks">Toutes mes tâches</button>
 					<button class="ui blue basic button" id="tasksToDo">Tâches à faire</button>
 					<button class="ui blue basic button" id="tasksDone">Tâches terminées</button>
+
 				</div>
 			</div>
 		</div>
@@ -33,12 +35,14 @@
 			<div class="four wide column">
 				<div class="ui vertical fluid tabular menu">
 					<div id="menuList">
-						<a id="List1" class="item active">Courses</a>
-						<a id="List2" class="item ">Idées de voyage<i class="trash outline icon"></i></i></a>
+
+						<a id="List1" class="item active">Exercice a faire <i class="write icon"></i><i class="empty star icon"></i></a>
+						<a id="List2" class="item ">rendez-vous a venir <i class="trash outline icon"></i><i class="write icon"></i><i class="empty star icon"></i></a>
 					</div>
 					<div>
 						<form onsubmit="return false" class="ui center input">
-							<input type="text" name="addList" id="fieldList"><button id="addList" class="small ui blue button">Créer liste</button>
+							<input type="text" name="addList" id="fieldList"><button id="addList" class="small ui teal button">Créer une liste</button>
+							
 						</form>
 					</div>
 				</div>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  body {
  	background-color: #C5C6B6;
  	font-family: 'Open Sans', sans-serif;
@@ -52,3 +53,59 @@
  	text-align: left;
 
  }
+=======
+html > body {
+	background-color: #FFFFF3;
+	font-family: 'Open Sans', sans-serif;
+}
+
+div {
+	margin: 30px;
+}
+
+#add {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	margin: 5px 15px;
+}
+
+.ui.centered.header {
+	color: #011638;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5em;
+}
+.tasks li .ui.checkbox {
+	margin: 10px;
+	font-size: 1.3em;
+	line-height: 1.2em;
+}
+
+div > ul.tasks > li {
+	list-style: none;
+}
+
+#tasks .checked {
+	color: grey;
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+#textInput {
+	font-size: 22px;
+}
+
+#fieldInput {
+	height: 40px;
+	width: 500px;
+}
+
+.ui.thirteen.wide.centered.grid {
+	margin-top: 40px;
+}
+
+#tasks {
+	margin-top: 10px;
+	text-align: left;
+
+}
+>>>>>>> 2aadad64e8d186393f22a0df0ffc36e7621b622a
